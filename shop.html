@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+
+    <link href="styles/shop.css" rel="stylesheet" type="text/css">
+    <script src="./javascript/cart.js" type="text/javascript"></script>
+<head>
+    <title>No Milk | Your Coffee Shop</title>
+</head>
+<body>
+    <div id="page-wrapper">
+        <div id="header">
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a class="selected" href="shop.html">&nbspSHOP&nbsp</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+            <a id="carticon" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+
+            <img id="bnimg" src="./photos/Header%20-%20Coffee%20Cup%20-%20Wide.png">
+            <div id="topBox">
+                <p>SHOP</p>
+                <p>Coffee <br> Equipment <br> Brew kits</p>
+            </div>
+
+        </div>
+
+        <div id="content">
+            <div id="wrap1">
+                <h1>Coffee</h1>
+
+                <div class="cofefe">
+                    <img src="./photos/Shop%20-%20French%20Roast.png">
+                    <p>Stumptown coffee</p>
+                    <p>15</p>
+                    <p>French Roast</p>
+                    <button id="cartitem1" onclick="addCart('cartitem1')" class="button">Add to cart</button>
+                </div>
+
+                <div class="cofefe">
+                    <img src="./photos/Shop%20-%20Trapper%20Creek.png">
+                    <p>Stumptown cofsdfee</p>
+                    <p>15</p>
+                    <p>Trapper Creek</p>
+                    <button id="cartitem2" onclick="addCart('cartitem2')" class="button">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        <div id="content2">
+            <img id="grinder" src="./photos/Shop%20-%20Grinder.png">
+                <div id="wrap2">
+                    <h2>Whole Bean Coffee</h2>
+                    <p>Whole bean cofe that is fresh , perfectly rosasted, and ready for your favourite grinder. Made from a clean, sustainable and green brean farm process.</p>
+                </div>
+        </div>
+        
+        <div id="content">
+            <div id="wrap1">
+            <h1>Equipment</h1>
+                
+                <div class="cofefe">
+                    <img src="./photos/Shop%20-%20Aeropress.png">
+                    <p>Aerospress</p>
+                    <p>30</p>
+                    <p>The Aeropress coffee system is prortable. lightweight, and brews a sweet, full-bodied cup.</p>
+                    <button id="cartitem3" onclick="addCart1('cartitem3')" class="button">Add to cart</button>
+                </div>
+
+                <div class="cofefe">
+                    <img src="./photos/Shop%20-%20French%20Press.png">
+                    <p>Bodum French Press</p>
+                    <p>36</p>
+                    <p>This 8-cup press produces a result that big flavor, body and mouthful. </p>
+                    <button id="cartitem4"  onclick="addCart1('cartitem4')" class="button">Add to cart</button>
+                </div>
+                
+                <div class="cofefe">
+                    <img style="width: 110%" src="./photos/Shop%20-%20Brew%20Kit.png">
+                    <p>Chemist Brew Kit</p>
+                    <p>215</p>
+                    <p>The chemist contains every piece of equipment you need to get from beans to brwe. Chemez brewer, filthers, baratza Encore Burr Grinder, ceranuc mug, Nobavita Gooseneck Kettle, and pocket scale.</p>
+                    <button id="cartitem5" onclick="addCart1('cartitem5')" class="button">Add to cart</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="local">
+            <div id="wrap3">
+                <div class="proudimg">
+                    <img src="./photos/Feature%20-%20Brewing.png">
+                </div>
+                <div id="box2">
+                    <h4>Quality Instrument</h4>
+                    <p>Using the highest quality equipment, we are able to pull the most flavourful shots out of our coffee. We try to extend that abiility to you by offering the best equipment to you at the best prices.</p>
+                </div>
+            </div>
+        </div>
+        <div id="map">
+            <div id="wrap3">
+                <div class="map-responsive" id="somemap">
+<!--                    <img src="photos/Footer%20-%20Map.png">-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2449.038851047469!2d-106.6374273843181!3d52.13361477254414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5304f6b76e863ed5%3A0x7019061198243952!2s107+Science+Pl%2C+Saskatoon%2C+SK+S7N+0X2!5e0!3m2!1sen!2sca!4v1543974956820" width="1000" height="230" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <div id="alexa">
+                    <p></p>
+                </div>
+                <p>107-117 Science Place</p>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="left">
+                <p>© No Milk Coffee <br><br>107-117 Science Place <br>Saskatoon. Sk</p>
+            </div>
+
+            <div id="right">
+                <p>Photography by</p>
+                <p>Visualhunt <br> Stumptown Coffee Roasters</p>
+            </div>
+        </div>  
+        
+    </div>
+</body>
+</html>

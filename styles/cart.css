@@ -1,0 +1,448 @@
+@font-face{
+    font-family: Odachi;
+    src: url(../fonts/odachi-webfont.woff);
+}
+
+@font-face{
+    font-family: Eusthalia;
+    src: url("../fonts/eusthalia_sans_slant-webfont.woff");
+}
+@font-face{
+    font-family: Lato;
+    src: url("../fonts/lato-light-webfont.woff");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding:0;
+    margin:0;
+}
+
+#page-wrapper {
+    width:100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+#header{  
+    position: relative;
+    overflow: hidden;
+}
+
+#bnimg{
+    pointer-events: none;
+    user-select: none;
+    width: 65%;
+    float:left;
+}
+
+#topBox{
+    pointer-events: none;
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 100%;
+    background-color: #300c06;
+    width: 35%;
+    box-sizing: border-box;
+}
+
+#topBox p{
+    font-size: 2.3em;
+    font-family: "Eusthalia";
+    color:#d8dbdb;
+    text-align: center;
+    margin-top:  43%;
+    
+}
+
+ul {
+    left: 10px;
+    float:left;  
+    position: absolute;
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+
+li {
+    display:inline-block;
+    margin: 0.6em;
+}
+
+a {
+    font-family: "Eusthalia";
+    font-weight: bold;
+    color:#300c06;
+    text-decoration: none;
+    font-size: .8em;
+    text-transform: uppercase;
+    transition-duration: 0.4s;
+    
+}
+a:hover {
+    color: #da4e31;
+}
+p {
+    font-style: uppercase;
+}
+#carticon{
+    color: #da4e31;
+    font-size:20px;
+    position: absolute;
+    right: 35%;
+    margin-top: 0.3em;
+    margin-right: 10px;
+}
+
+.selected {
+    color: white;
+}
+.selected {
+    background-color: saddlebrown;
+}
+/*--------------------*/
+.cart-item{
+    font-family: "Eusthalia";
+    width:100%;
+    max-width: 800px;
+    height:55px;
+    margin:auto;
+    padding-top:10px;
+    box-sizing: border-box;
+    background-color:white;
+    position: relative;
+    margin-top:10px;
+    display: block;
+}
+.cart-item h2{
+    float:left;
+    margin-left:20px;
+    margin-right:20px;
+}
+.cart-item p:nth-child(2){
+    position: absolute;
+    margin-left:450px;
+    margin-right:20px;
+}
+.cart-item p:nth-child(3){
+    position: absolute;
+    margin-left:700px;
+    margin-right:20px;
+}
+
+#exo {
+    font-family: "Eusthalia";
+    width:100%;
+    max-width: 800px;
+    height:55px;
+    margin:auto;
+    padding-top:10px;
+    box-sizing: border-box;
+    background-color:white;
+    position: relative;
+    margin-top:10px;
+    border-bottom:2px solid #DDD;
+}
+#exo h2{
+    float:left;
+    margin-left:20px;
+    margin-right:20px;
+}
+#exo h2:nth-child(2){
+    position: absolute;
+    margin-left:390px;
+    margin-right:20px;
+}
+#exo h2:nth-child(3){
+    position: absolute;
+    margin-left:670px;
+    margin-right:20px;
+}
+
+#tot {
+    font-family: "Eusthalia";
+    width:100%;
+    max-width: 800px;
+    height:55px;
+    margin:auto;
+    padding-top:10px;
+    box-sizing: border-box;
+    background-color:white;
+    position: relative;
+/*
+    margin-top:10px;
+    border-bottom:2px solid #DDD;
+*/
+    border-top:2px solid #DDD;
+}
+#tot h2:nth-child(3){
+    position: absolute;
+    margin-left:690px;
+    margin-right:20px;
+}
+#tot h2:nth-child(2){
+    position: absolute;
+    margin-left:530px;
+    margin-right:20px;
+}
+#tot h2:nth-child(5){
+    position: absolute;
+    padding-top: 40px;
+    margin-left:690px;
+    margin-right:20px;
+}
+#tot h2:nth-child(4) {
+    position: absolute;
+    padding-top: 40px;
+    margin-left: 530px;
+    margin-right: 20px;
+}
+.button2{
+    color: white;
+    background-image: url(../photos/kill.png);
+    border:none;
+    background-color:white;
+    background-size: cover;
+    position:absolute;
+    width:28px;
+    height:28px;
+    top:11px;
+    right:1px;
+    cursor: pointer;
+}
+.empty-message{
+    font-weight: bold;
+    font-size: 50px;
+    text-align:center;
+    color:indianred;
+}
+
+.clogo {
+    text-align: center;
+    font-family: "Odachi";
+    font-weight: bold;
+    font-size: 50px;
+    margin-top:20px;
+    margin-bottom: 50px;
+}
+/*----------------*/
+
+#form {
+    text-align: center;
+/*    display: inline-block;*/
+    max-width: 700px;
+/*    min-width: 500px;*/
+    margin:auto;
+
+}
+input[type=text] {
+    background-color: lightgrey;
+    font-family: "Eusthalia";
+    height:55px;
+    padding-left: 20px;
+    padding-right: 100px;
+    margin: 10px 10px;
+    margin-left: 1px;
+    border-style: none;
+    
+}
+
+input[type=text]:focus {
+    background-color: white;
+    border-color: deepskyblue;
+}
+
+#form2 {
+    
+    text-align: center;
+/*    display: inline-block;*/
+    max-width: 700px;
+/*    min-width: 800px;*/
+    margin:auto;
+     
+}
+
+#form2 input[type=text]:nth-child(1) {
+    background-color: lightgrey;
+    font-family: "Eusthalia";
+    height:55px;
+    padding-left: 20px;
+    padding-right: 100px;
+    margin: 10px 10px;
+    margin-left: 1px;
+    margin-right: 350px;
+    
+}
+#form2 input[type=text]:nth-child(2) {
+    background-color: lightgrey;
+    font-family: "Eusthalia";
+    height:55px;
+    padding-left: 20px;
+    padding-right: 313px;
+    margin: 10px 10px;
+    margin-left: 1px;    
+}
+.cards {
+    margin-bottom: -15px;
+    width: 60px;
+}
+#form2 input[type=text]:nth-child(1):focus {
+    background-color: white;
+    border-color: deepskyblue;
+    
+}
+#form2 input[type=text]:nth-child(2):focus {background-color: white;
+    border-color: deepskyblue;
+    
+}
+/*
+*/
+
+#wrap3 {
+    width:100%;
+    max-width: 1000px;
+    margin: auto;
+    height: 30vh;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    position: relative;
+    overflow: hidden;   
+}
+
+.proudimg img {
+    pointer-events: none;
+    user-select: none;
+    width: 40%;
+    float:right;
+    margin-right: 30px;
+    
+}
+
+#box2 {
+    position: absolute;
+    height: 60%;
+    bottom:0;
+    left: 0;
+    padding-bottom: 30px;
+    background-color: #eadfc0;
+    width: 75%;
+/*    box-sizing: border-box;*/
+    padding-top: 16px;
+    z-index: -3;
+}
+#box2 h4{
+    font-size: 30px;
+    margin-left: 90px;
+    font-family: "Eusthalia";
+}
+#box2 p{
+    line-height: 1.6;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 90px;
+    
+    width: 50%;
+    font-family: "Lato";
+    left: 0;
+    
+}
+
+#map {
+    height: 35vh;
+    margin-top: 30px;
+/*    margin-bottom: 40px;*/
+/*    padding-bottom: 20px;*/
+    position: relative;
+    overflow: hidden; 
+/*    overflow:visible;*/
+}
+#map img{
+    margin-left: 100px;
+    width: 80%;
+    position: absolute;
+}
+#map p:nth-child(3) {
+    position:absolute;
+    font-family: "Eusthalia";
+    z-index: 3;
+    bottom: 15%;
+    left:50%;
+    font-size:25px;
+    width: 100%;
+    
+}
+#alexa p{
+    text-align: bottom;
+    position: absolute;
+    z-index: -2;
+    width: 60%;
+    height: 15vh;
+    bottom: 0;
+    right: 0;
+    background-color: #eadfc0;
+    
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:95%;
+    width:98%;
+    position:absolute;
+}
+/*-------footer-----*/
+
+#footer {
+    top:0;
+    position: relative;
+    background-color: #300c06;
+    color:white;
+    height: 20vh;
+    font-family: "Eusthalia";
+}
+#left{
+    float: left;
+    margin-top: 5vh;
+    margin-left: 15vh;
+}
+#right{
+    margin-top: 5vh;
+    margin-right: 15vh;
+    float: right;
+}
+#right p:nth-child(2){
+   font-family: "Lutos";
+}
+
+/* ----*/
+#wrapper2 {
+    width:100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.btn {
+    height:55px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px 10px;
+    margin-left: 1px;
+    font-size:20px;
+    
+    border: none;
+    font-family: "Eusthalia";
+    background-color: #300c06;
+    color: #eadfc0;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.btn:hover {
+    color: #da4e31;
+    
+}
